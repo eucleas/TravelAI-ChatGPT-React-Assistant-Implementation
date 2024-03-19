@@ -1,0 +1,91 @@
+.App {
+  background-image: url('background.webp'); /* Adjust the path as needed */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Make sure your app covers the full height of the viewport */
+}
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.chat-container {
+  
+  width: 60%;
+  height: 80%;
+  overflow-y: auto;
+  margin-top: 30px; /* Adjust or remove margin as needed */
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  padding-left: 20px;
+}
+
+.message {
+  margin: 5px;
+  overflow-y: auto;
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  color: white;
+  max-width: 90%;
+}
+
+.message.User {
+  background-color: #007bff;
+  align-self: flex-end;
+  padding-left: 10px;
+}
+
+.message.Bot {
+  background-color: #666;
+  align-self: flex-start;
+  padding-left: 10px;
+}
+
+textarea {
+  overflow-y: auto;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  width: 60%;
+  height: 50px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  resize: none;
+  color:royalblue;
+  font-weight: 600;
+}
+
+button {
+  background-image: url('SendButton3.png');
+  width: 87px;
+  height: 50px;
+  font-size: 16px;
+}
+.buttonRefresh {
+  background-image: url('Refresh.png');
+  width: 87px;
+  height: 73px;
+  font-size: 16px;
+  margin-top: 10px; /* Adjust or remove margin as needed */
+  border: 2px solid #ccc;
+}
+/* Additional styles to improve scrolling behavior */
+.chat-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.chat-container::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+}
